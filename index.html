@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Code Review</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,6 +18,7 @@
     <div class="intro">
       <h2>Signup for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
+      <hr>
     </div>
 
     <form action="index.html" method="post">
@@ -41,6 +42,7 @@
 
         <label for="state">State</label>
         <select id="state" name="state">
+          <option value="" disabled selected>Choose State</option>
           <option value="AL">Alabama</option>
         	<option value="AK">Alaska</option>
         	<option value="AZ">Arizona</option>
@@ -98,29 +100,30 @@
         <input type="number" id="zip" name="zip">
       </fieldset>
 
+      <hr>
       <fieldset class="newsletter">
         <legend>Newsletter</legend>
         <fieldset>
           <legend>Select the newsletters you would like to receive</legend>
 
-          <label for="html">HTML News</label>
           <input type="checkbox" id="html" name="newsletter" value="html">
+          <label for="html">HTML News</label>
 
-          <label for="css">CSS News</label>
           <input type="checkbox" id="css" name="newsletter" value="css">
+          <label for="css">CSS News</label>
 
-          <label for="js">Javascript News</label>
           <input type="checkbox" id="js" name="newsletter" value="js">
+          <label for="js">Javascript News</label>
         </fieldset>
 
         <fieldset>
           <legend>Newsletter format</legend>
 
-          <label for="format-html">HTML</label>
           <input type="radio" id="format-html" name="format" value="html">
+          <label for="format-html">HTML</label>
 
-          <label for="plain">Plain Text</label>
           <input type="radio" id="plain" name="format" value="plain">
+          <label for="plain">Plain Text</label>
         </fieldset>
 
         <label for="other">Other topics you'd like to hear about</label>

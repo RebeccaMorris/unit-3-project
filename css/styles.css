@@ -1,0 +1,171 @@
+/***********************/
+/* General             */
+/***********************/
+
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  font: 16px/1.5 'Merriweather', serif;
+  color: #2d3945;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+h2 {
+  margin: 30px 0 10px;
+  font-size: 1.2rem;
+  color: #2d3945;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/***********************/
+/* Header              */
+/***********************/
+
+header {
+  background-color: #2d3945;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 0;
+  padding: 30px 0;
+  color: #fff;
+}
+
+
+/***********************/
+/* Main                */
+/***********************/
+
+main {
+  width: 90.625%;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.intro p {
+  margin-bottom: 45px;
+  color: #a4a9ae;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border: none;
+  border-top: 2px solid #2d3945;
+}
+
+.intro hr::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  border: none;
+  margin-top: -11px;
+  background-color: #2d3945;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  margin: 10px 0 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+label,
+fieldset fieldset legend {
+  font-size: .9rem;
+  font-weight: 300;
+  color: #495d70;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eff0f1;
+}
+
+textarea {
+  height: 100px;
+  margin: 15px 0 25px;
+}
+
+::placeholder {
+  padding-right: 1.2rem;
+  text-align: right;
+  font-size: .8rem;
+  font-style: italic;
+  color: #a4a9ae;
+}
+
+#zip {
+  width: 155px;
+}
+
+fieldset.newsletter fieldset {
+  margin-bottom: 15px;
+}
+
+fieldset.newsletter fieldset legend {
+  margin: 15px 0 10px;
+}
+
+fieldset.newsletter label {
+  display: inline-block;
+  width: 90%;
+}
+
+fieldset.newsletter input[type="checkbox"],
+fieldset.newsletter input[type="radio"] {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  margin: 5px 10px 10px 0;
+}
+
+button[type="submit"] {
+  height: 60px;
+  width: 100%;
+  margin: 5px 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4ebbb5;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+
+/***********************/
+/* Footer              */
+/***********************/
+
+footer {
+  text-align: center;
+  font-style: italic;
+  color: #a4a9ae;
+}
