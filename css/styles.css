@@ -50,6 +50,7 @@ header {
 
 main {
   width: 90.625%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -169,4 +170,37 @@ footer {
   text-align: center;
   font-style: italic;
   color: #a4a9ae;
+}
+
+
+/***********************/
+/* Media Queries       */
+/***********************/
+
+@media (min-width: 768px) {
+
+  .contact label {
+    display: inline-block;
+    width: 100%;
+    clear: left;
+    line-height: 4.6875rem;
+  }
+
+  .contact label::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .contact input,
+  .contact select {
+    float: right;
+    display: inline-block;
+    width: 445px;
+  }
+
+  .contact input[name="zip"] {
+    width: 155px;
+    margin-right: 290px;
+  }
 }
