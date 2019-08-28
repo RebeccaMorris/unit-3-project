@@ -123,7 +123,7 @@ textarea {
   color: #a4a9ae;
 }
 
-#zip {
+input[name="zip"] {
   width: 155px;
 }
 
@@ -137,7 +137,7 @@ fieldset.newsletter fieldset legend {
 
 fieldset.newsletter label {
   display: inline-block;
-  width: 90%;
+  width: 100%;
 }
 
 fieldset.newsletter input[type="checkbox"],
@@ -145,7 +145,7 @@ fieldset.newsletter input[type="radio"] {
   display: inline-block;
   height: auto;
   width: auto;
-  margin: 5px 10px 10px 0;
+  margin-right: 10px;
 }
 
 button[type="submit"] {
