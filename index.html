@@ -25,28 +25,34 @@
       <fieldset class="contact">
         <legend>Contact Information</legend>
 
-        <label>Full Name
-          <input type="text" name="name" placeholder="Required" required>
-        </label>
+        <div class="row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Required" required>
+        </div>
 
-        <label>Email Address
-          <input type="email" name="email" placeholder="Required" required>
-        </label>
+        <div class="row">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Required" required>
+        </div>
 
-        <label>Phone Number
-          <input type="tel" name="phone">
-        </label>
+        <div class="row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
 
-        <label>Street Address
-          <input type="text" name="street">
-        </label>
+        <div class="row">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="street">
+        </div>
 
-        <label>City
-          <input type="text" name="city">
-        </label>
+        <div class="row">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city">
+        </div>
 
-        <label>State
-          <select name="state">
+        <div class="row">
+          <label for="state">State</label>
+          <select id="state" name="state">
             <option value="" disabled selected>Choose State</option>
             <option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
@@ -100,11 +106,12 @@
           	<option value="WI">Wisconsin</option>
           	<option value="WY">Wyoming</option>
           </select>
-        </label>
+        </div>
 
-        <label>Zip Code
-          <input type="number" name="zip">
-        </label>
+        <div class="row">
+          <label for="zip">Zip Code</label>
+          <input type="number" id="zip" name="zip">
+        </div>
       </fieldset>
 
       <hr>
@@ -113,39 +120,38 @@
         <fieldset>
           <legend>Select the newsletters you would like to receive</legend>
 
-          <label>
-            <input type="checkbox" name="newsletter" value="html">
-            HTML News
-          </label>
+          <div class="row">
+            <input type="checkbox" id="html" name="newsletter" value="html">
+            <label for="html">HTML News</label>
+          </div>
 
-          <label>
-            <input type="checkbox" name="newsletter" value="css">
-            CSS News
-          </label>
+          <div class="row">
+            <input type="checkbox" id="css" name="newsletter" value="css">
+            <label for="css">CSS News</label>
+          </div>
 
-          <label>
-            <input type="checkbox" name="newsletter" value="js">
-            Javascript News
-          </label>
+          <div class="row">
+            <input type="checkbox" id="js" name="newsletter" value="js">
+            <label for="js">Javascript News</label>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend>Newsletter format</legend>
 
-          <label>
-            <input type="radio" name="format" value="html">
-            HTML
-          </label>
+          <div class="row">
+            <input type="radio" id="format-html" name="format" value="html">
+            <label for="format-html">HTML</label>
+          </div>
 
-          <label>
-            <input type="radio" name="format" value="plain">
-            Plain Text
-          </label>
+          <div class="row">
+            <input type="radio" id="plain" name="format" value="plain">
+            <label for="plain">Plain Text</label>
+          </div>
         </fieldset>
 
-        <label>Other topics you'd like to hear about
-          <textarea name="other"></textarea>
-        </label>
+        <label for="other">Other topics you'd like to hear about</label>
+        <textarea id="other" name="other"></textarea>
       </fieldset>
 
       <button type="submit">Sign Up</button>
@@ -153,7 +159,7 @@
   </main>
 
   <footer>
-    <p><small>Copyright The Code Review</small></p>
+    <p><small>Copyright &copy; The Code Review</small></p>
   </footer>
 </body>
 </html>

@@ -133,7 +133,7 @@ textarea {
 }
 
 input[name="zip"] {
-  width: 155px;
+  max-width: 155px;
 }
 
 fieldset.newsletter fieldset {
@@ -145,8 +145,7 @@ fieldset.newsletter fieldset legend {
 }
 
 fieldset.newsletter label {
-  display: inline-block;
-  width: 100%;
+  width: auto;
 }
 
 fieldset.newsletter input[type="checkbox"],
@@ -188,27 +187,16 @@ footer {
 @media (min-width: 768px) {
 
   .contact label {
-    display: inline-block;
-    width: 100%;
-    clear: left;
-    line-height: 4.5rem;
-  }
-
-  .contact label::after {
-    content: "";
-    display: table;
-    clear: both;
+    min-width: 150px;
   }
 
   .contact input,
   .contact select {
-    float: right;
-    display: inline-block;
-    width: 445px;
+    flex-grow: 1;
   }
 
-  .contact input[name="zip"] {
-    width: 155px;
-    margin-right: 290px;
+  .contact .row {
+    display: flex;
+    align-items: center;
   }
 }
